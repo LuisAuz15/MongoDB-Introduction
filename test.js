@@ -32,17 +32,17 @@ db.clientes.insert(
 db.clientes.find();
 db.clientes.find({firstName: 'Geoconda'}, {firstName: true, lastName:false});
 
-// replace or update data
+
 db.clientes.update(
-  {firstName: 'Geoconda'}, //query
+  {firstName: 'Geoconda'}, 
   {
     firstName: 'Geoconda',
     lastName: 'Garcia',
     gender: 'male'
-  } // new data
+  }
 );
 
-// add a new date
+
 db.clientes.update(
   {firstName: 'Luis Jr'},
   {
